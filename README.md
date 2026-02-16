@@ -76,6 +76,8 @@ project_root/
 5. **Dropout**: 防止過擬合 (Overfitting)。
 6. **Dense Layer**: 輸出預測結果 (AKI 風險機率)。
 
+![Model Architecture](model_plot_new.png)
+
 ---
 
 ## 📊 實作成果與模型表現 (Results)
@@ -88,6 +90,16 @@ project_root/
 | **Loss** | **0.0745** | 訓練損失率 (Binary Crossentropy) |
 | **F1-Score** | **0.946** | 綜合考量 Precision 與 Recall 的指標 |
 | **AUC** | **0.996** | ROC 曲線下面積，顯示極佳的分類能力 |
+
+### 模型訓練結果 (Training Results)
+
+| Accuracy | Loss |
+| :---: | :---: |
+| ![Accuracy](acc.png) | ![Loss](loss.png) |
+
+| Confusion Matrix | ROC Curve |
+| :---: | :---: |
+| ![Confusion Matrix](confusion_matrix.png) | ![ROC Curve](roc.png) |
 
 **實際應用場景驗證：**
 系統在模擬測試中，能夠準確識別連續寡尿情況，並在符合 AKIN stage 2 標準時成功發出警報與 Line 通知。
