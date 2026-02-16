@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDE
+.idea/
+.vscode/
+
+# Project specific
+data/
+model/
+weight/
+*.h5
+results/
+logs/
+urine-logs/
+
+# Result plots
+*.png
